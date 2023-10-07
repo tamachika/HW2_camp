@@ -7,6 +7,10 @@ app = Flask(__name__)
 def hello_world():
     return "Hello,World"
 
+@app.route("/goodbye")
+def goodbye():
+    return "Good bye!"
+
 
 if __name__ == "__main__":
     # 使用するポートを明示
